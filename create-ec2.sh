@@ -1,6 +1,6 @@
 #!/bin/bash
 
-instances =("mongodb","redis","mysql","rabbitmq","catalogue","user","cart","shipping","payment","web")
+instances =("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
 domain_name = "lingaiah.online"
 hosted_zone_id ="Z02765181CEB7C51AA89M"
 

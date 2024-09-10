@@ -25,6 +25,7 @@ then
 else
     private_ip=$(aws ec2 describe-instances --instance-ids $instance_id --query 'Reservations[0].Instances[0].[PrivateIpAddress]' --output text)
     ip_to_use=$private_ip
+fi
 
 echo "creating R53 record for $name"
 aws route53 change-resource-record-sets --hosted-zone-id $hosted_zone_id --change-batch '

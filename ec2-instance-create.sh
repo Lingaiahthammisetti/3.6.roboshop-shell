@@ -1,6 +1,6 @@
 #!/bin/bash
 
-instances =("mongo" "redis" "mysql")
+instances = ("mongodb" "redis" "mysql")
 
 for name in ${instances[@]}; do
 echo "instance is: $name"

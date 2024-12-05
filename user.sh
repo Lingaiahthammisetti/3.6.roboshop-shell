@@ -64,7 +64,7 @@ VALIDATE $? "extracting user"
 npm install &>> $LOGFILE
 VALIDATE $? "Installing dependencies"
 
-cp /home/ec2-user/roboshop-shell/user.service /etc/systemd/system/user.service &>> $LOGFILE
+cp /home/ec2-user/3.4.roboshop-shell/user.service /etc/systemd/system/user.service &>> $LOGFILE
 
 systemctl daemon-reload &>> $LOGFILE
 VALIDATE $? "Daemon reload"

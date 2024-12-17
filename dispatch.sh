@@ -46,7 +46,7 @@ VALIDATE $? "clean up existing directory"
 mkdir -p /app &>> $LOGFILE
 VALIDATE $? "Creating app directory"
 
-ccurl -L -o /tmp/dispatch.zip https://roboshop-builds.s3.amazonaws.com/dispatch.zip &>> $LOGFILE
+curl -L -o /tmp/dispatch.zip https://roboshop-builds.s3.amazonaws.com/dispatch.zip &>> $LOGFILE
 VALIDATE $? "Downloading dispatch application"
 
 cd /app  &>> $LOGFILE

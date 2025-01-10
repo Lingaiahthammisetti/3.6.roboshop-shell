@@ -48,7 +48,7 @@ VALIDATE $? "Moving to HTML directory"
 unzip /tmp/web.zip &>>$LOGFILE
 VALIDATE $? "Extracting web application"
 
-cp /home/ec2-user/3.4.roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf  &>>$LOGFILE
+cp /home/ec2-user/3.6.roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf  &>>$LOGFILE
 VALIDATE $? "copying roboshop conf"
 
 systemctl restart nginx &>>$LOGFILE

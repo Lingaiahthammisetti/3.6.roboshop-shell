@@ -64,7 +64,7 @@ VALIDATE $? "getting dispatch application"
 go build &>> $LOGFILE
 VALIDATE $? "Buidling dispatch application"
 
-cp /home/ec2-user/3.6.roboshop-shell/dispatch.service /etc/systemd/system/dispatch.service &>> $LOGFILE
+cp /home/ec2-user/3.7.roboshop-shell/dispatch.service /etc/systemd/system/dispatch.service &>> $LOGFILE
 VALIDATE $? "Copying dispatch service file"
 
 systemctl daemon-reload &>> $LOGFILE
